@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Video</title>
+
+	<style type="text/css">
+			
+			*{
+				margin:0;
+				padding:0;
+				
+			}
+			
+			
+			
+			h1{
+				color:#FBC2C3;
+				font-size: 48px;
+			}
+		
+			h2{
+				color:lightcoral;
+				font-size: 32px;
+				padding:0px; 
+				
+			}
+			
+			h5{
+				color:lightcoral;
+			}
+			
+			
+			header, footer, main, nav{
+				
+				width: 960px;
+				
+				margin: 0 auto; /* Centra a la caja automáticamente en horizontal*/
+			}
+		
+			header, footer{
+				height: 100px;
+				padding:20px;
+				text-align: center;
+				background-color:lavenderblush;
+			}
+			
+			nav{
+				height: 10px;
+				padding: 20px;
+				background-color:#C58A8B;
+			}
+			
+			
+			main{
+				height: auto;
+				background-color:antiquewhite;
+				padding: 20px;
+			}
+			
+			section{
+				background-color: aliceblue;
+				margin: 20px;
+				padding:20px;
+				border: solid 5px #E7ABAC;
+			}
+			
+			p{
+				padding: 10px;
+			}
+			
+			
+		</style>
+	
+	</head>
+
+<body>
+	<nav>
+	
+		<h1>Video en HTML5</h1>
+		
+	
+		
+		</nav>
+	<main>
+	
+	<section>
+		<h1>Inserción de video simple</h1>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi necessitatibus cumque, magnam cum nobis mollitia.</p>
+		<audio controls>
+		
+		<source src="recursos/Video3.mp4">
+		
+			
+			Your browser does not support the video element.
+		
+		</audio>
+		
+	
+		</section>
+	
+	
+		<section>
+		
+		<h1>Inserción de video con reproducción autompatiá</h1>
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro soluta officiis recusandae atque aperiam odit.</p>
+			
+			<video controls muted autoplay>
+			
+			<source src="recursos/04 reloj.mp4">
+				
+				
+			</video>
+			</section>
+		
+		<section>
+		
+		<h1>Inserción de video con reproducción cíclica</h1>
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro soluta officiis recusandae atque aperiam odit.</p>
+			
+			<video controls autoplay loop>
+			
+			<source src="recursos/02 boomerang.mp4">
+				
+				
+			</video>
+			</section>
+		
+			<section>
+		
+		<h1>Inserción de video con repositorio</h1>
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro soluta officiis recusandae atque aperiam odit.</p>
+			
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/rt0DziZhcY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+				
+			
+			</section>
+	
+	</main>
+	<footer>
+	<h5>Elaborado por Valeria Cs</h5>
+	
+	</footer>
+	
+</body>
+</html>

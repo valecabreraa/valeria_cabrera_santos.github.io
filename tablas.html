@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas</title>
+	<style type="text/css">
+	
+		h1{
+		color:#fabc28;
+		font-size: 48px;	
+		}	
+		
+		header, footer{
+				height: 100px;
+				width: 1024px;
+				padding:20px;
+				text-align: center;
+				background-color:#151723;
+			}
+		
+		footer{
+			
+			color:#FFFFFF;
+		}
+		nav{
+				height: 10px;
+				padding: 20px;
+				background-color:#9DB3E7;
+			}
+			
+		main{
+				height: auto;
+				background-color:#fabc28;
+				padding: 20px;
+			}
+		
+		
+		
+		
+		section{
+			background-color:#FFE351;
+				margin: 15px;
+				padding:20px;
+				border: dotted 10px #2a2642;
+		}
+		
+		header, footer, main, nav{
+				
+				width: 1024px;
+				
+				margin: 0 auto; /* Centra a la caja automáticamente en horizontal*/
+			}
+		
+		
+		table{
+			
+			border-collapse: collapse;
+		}
+		
+		th,td{
+			
+			padding:20px;
+		}
+		
+		th{
+			text-align: left;
+			/*background-color: #2a2642*/;
+			color:#FFFFFF;
+		}
+		
+		td{
+			/*background-color: #CDBDBD;*/	
+			
+		}
+		
+		#t01 th {
+			
+			background-color: #99A3BB;
+		}
+		
+		#t01 td {
+			
+			background-color: #99A3BB;
+			border: double 2px #233F97;
+		}
+		
+		#t01  {
+			
+			border: double 2px #233F97;
+		}
+		
+		
+		#t02 th, #t02 td {
+			
+			padding: 15px;
+			text-align: left;
+		}
+		
+		
+		#t02 tr:nth-child(even){
+			background-color: #FE724c;
+		}
+		
+		
+		
+		
+		
+	</style>	
+</head>
+
+<body>
+	<header>
+	<h1>Tablas en HTML</h1>
+	</header>
+	<nav> <p> Aquí va el menú</p></nav>
+	<main>
+		<section><h2> Tabla simple</h2></section>
+		<section><h2>Tabla con celda</h2></section>
+		<section><h>Tabla modificada</h></section>
+		<section><table id="t02"></table></section>
+		<section>
+			<h2>Tabla simple</h2>
+			<table border="1">
+				<thead>
+					<tr>
+					<th>Nombre</th>
+					<th>Email</th>
+					<th>Teléfono</th>
+					</tr>
+				
+				
+				</thead>
+				<tbody>
+				<tr>
+					<td>Daniel Vázquez</td>
+					<td>dany.vazquez@gmail.com</td>
+					<td>2224224198</td>
+				</tr>
+				<tr>
+					<td>María Sánchez</td>
+					<td>lupita23@gmail.com</td>
+					<td>2223659863</td>
+				</tr>
+				<tr>
+					<td>Juan Esquivel</td>
+					<td>juan.es45@gmail.com</td>
+					<td>2222659323</td>
+				</tr>
+				<tr>
+					<td>Mariel Cabrera</td>
+					<td>mariel_benq@gmail.com</td>
+					<td>2223125366</td>
+				</tr>
+				<tr>
+					<td>Ian Mateos</td>
+					<td>ian.33669@gmail.com</td>
+					<td>2224224596</td>
+				</tr>
+				
+				
+				
+				</tbody>
+				
+				<tfoot></tfoot>
+			</table>
+			
+		<section>
+			<h2>Tabla con celda que abarca dos columnas</h2>
+			
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th colspan="2">Teléfonos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Georgina López</td>
+						<td>2226598307</td>
+						<td>2226699108</td>
+					</tr>
+					<tr>
+						<td>Agustín Ramírez</td>
+						<td>2224223659</td>
+						<td>2269854714</td>
+					</tr>
+					<tr>
+						<td>Héctor Cortés</td>
+						<td>5559874631</td>
+						<td>5556987124</td>
+					</tr>
+					
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+		</section>
+		<section>
+			<table width="600" border="1" id="t01">
+			<thead>
+				<th socpe="col">Nombre</th>
+				<th scope="col">Apellido</th>
+				<th socpe="col">Edad</th>
+				</thead>
+				
+				
+		<tr>
+			<td>Mariel</td>
+			<td>Cabrera Santos</td>
+			<td>28</td>
+		</tr>
+			
+		<tr>
+			<td>José Manuel</td>
+			<td>Gómez Pérez</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Luisa</td>
+			<td>Cantú Flores</td>
+			<td>48</td>
+		</tr>
+		
+		</table>
+</section>
+		
+		<table border="1">
+			  <thead>
+			    <tr>
+			      <th>Nombre</th>
+			      <th>Email</th>
+			      <th>Teléfono</th>
+		        </tr>
+		      </thead>
+			  <tbody>
+			    <tr>
+			      <td>Daniel Vázquez</td>
+			      <td>dany.vazquez@gmail.com</td>
+			      <td>2224224198</td>
+		        </tr>
+			    <tr>
+			      <td>María Sánchez</td>
+			      <td>lupita23@gmail.com</td>
+			      <td>2223659863</td>
+		        </tr>
+			    <tr>
+			      <td>Juan Esquivel</td>
+			      <td>juan.es45@gmail.com</td>
+			      <td>2222659323</td>
+		        </tr>
+			    <tr>
+			      <td>Mariel Cabrera</td>
+			      <td>mariel_benq@gmail.com</td>
+			      <td>2223125366</td>
+		        </tr>
+			    <tr>
+			      <td>Ian Mateos</td>
+			      <td>ian.33669@gmail.com</td>
+			      <td>2224224596</td>
+		        </tr>
+		      </tbody>
+			  <tfoot>
+		      </tfoot>
+		  </table>
+			
+		</section>
+		
+	</main>
+	<footer> Elaborado por: Valeria Cabrera Santos
+	</footer>
+</body>
+</html>
